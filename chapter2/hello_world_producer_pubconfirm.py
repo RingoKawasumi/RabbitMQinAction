@@ -1,7 +1,7 @@
 import pika, sys
 from pika import spec
 
-credentials = pika.PlainCredentials("guest", "guest");
+credentials = pika.PlainCredentials("guest", "guest")
 conn_params = pika.ConnectionParameters("localhost", credentials=credentials)
 
 conn_broker = pika.BlockingConnection(conn_params)
